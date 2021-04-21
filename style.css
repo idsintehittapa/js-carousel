@@ -44,7 +44,6 @@ p {
   margin: auto;
   width: 95%;
   overflow: hidden;
-  /* border: 5px solid pink; */
 }
 
 .carousel__slide {
@@ -56,6 +55,13 @@ p {
 .carousel__slide img {
   width: 100%;
   padding: 0 0.5rem;
+}
+
+@supports (-moz-appearance: none) {
+  .carousel__slide img {
+    width: auto;
+    max-width: 100% !important;
+  }
 }
 
 .carousel__buttons {
