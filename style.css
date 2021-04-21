@@ -60,7 +60,7 @@ p {
 @supports (-moz-appearance: none) {
   .carousel__slide img {
     width: auto;
-    max-width: 100% !important;
+    max-width: 100%
   }
 }
 
