@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="carousel__main">
+  <h1>JavaScript Carousel
+  </h1>
+  <div class="carousel__container">
+    <div class="carousel__slide">
+      <img src="./assets/pexels5.jpg" id="lastClone" alt=""/> 
+      <img src="./assets/pexels1.jpg" alt=""/>
+      <img src="./assets/pexels2.jpg" alt=""/>
+      <img src="./assets/pexels3.jpg" alt=""/>
+      <img src="./assets/pexels4.jpg" alt=""/>
+      <img src="./assets/pexels5.jpg" alt=""/>
+      <img src="./assets/pexels1.jpg" id="firstClone" alt=""/>
+    </div>
+  </div>
+
+  <div class="carousel__buttons">
+    <button class="carousel__button" id="preBtn"> ← </button>
+    <button class="carousel__button" id="nextBtn"> → </button>
+  </div>
+</main>
+
+<script src="./app.js"></script>
+</body>
+</html>

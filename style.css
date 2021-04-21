@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+  line-height: 1.25;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(247, 247, 247, 0.9) 0%, rgba(232, 232, 232, 0.9) 100%), #9a9a9a;
+  color: #000;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel__main h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.carousel__container {
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  border: 5px solid pink;
+}
+
+.carousel__slide {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  /* height: 40rem; */
+}
+
+.carousel__slide img {
+  width: 100%;
+}
+
+.carousel__buttons {
+display: flex;
+justify-content: space-evenly;
+}
+
+.carousel__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  color:rgb(0, 0, 0);
+}
+
+@media (min-width: 48rem) {
+  .carousel__container {
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 64.0625rem) {
+  .carousel__container {
+    width: 40%;
+  }
+}
