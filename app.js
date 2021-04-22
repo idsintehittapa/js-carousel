@@ -26,9 +26,9 @@ window.onload = () => {
     // the if-statement prevents us to go outside the container when clicking forward
     if (counter >= carouselImgs.length - 1) return
     carouselSlide.style.transition = "transform 0.4s ease-in-out"
-    counter++
+    counter++;
     carouselSlide.style.transform = "translateX(" + -size * counter + "px)"
-  })
+  });
 
   prevBtn.addEventListener("click", () => {
     // the if-statement prevents us to go outside the container when clicking backwards

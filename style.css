@@ -45,6 +45,7 @@ p {
   margin: auto;
   width: 95%;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel__slide {
@@ -59,24 +60,34 @@ p {
   padding: 0 0.5rem;
 }
 
-
-/* FireFox has a well-known bug which do not respect the width
+/* FireFox has a well-known bug which do not respect the width property
 to work around this, we make use of @support and specify the browser
 and define the width that way */
 @supports (-moz-appearance: none) {
   .carousel__slide img {
     width: auto;
-    max-width: 100%
+    max-width: 100%;
   }
 }
 
-.carousel__buttons {
-  display: flex;
-  justify-content: space-evenly;
+.carousel__button-prev {
+  border: none;
+  position: absolute;
+  z-index: 2;
+  bottom: 15%;
+  left: 15%;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
 }
 
-.carousel__button {
+.carousel__button-next {
   border: none;
+  position: absolute;
+  z-index: 2;
+  bottom: 15%;
+  right: 15%;
   background-color: transparent;
   cursor: pointer;
   font-size: 2rem;
@@ -87,10 +98,20 @@ and define the width that way */
   .carousel__container {
     width: 80%;
   }
+
+  .carousel__button-prev,
+  .carousel__button-next {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 64.0625rem) {
   .carousel__container {
     width: 39%;
+  }
+
+  .carousel__button-prev,
+  .carousel__button-next {
+    font-size: 3rem;
   }
 }
